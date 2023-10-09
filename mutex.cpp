@@ -4,6 +4,7 @@
 
 using namespace std;
 
+/*
 mutex mt;
 
 void printinfo(int n, char c) {
@@ -14,15 +15,16 @@ void printinfo(int n, char c) {
     cout << endl;
     mt.unlock();
 }
+*/
 
 int main() {
-    //printinfo(50,'p');
-    thread t1 (printinfo,50,'p');
-    thread t2 (printinfo,50,'r');
+    // printinfo(50,'p');
+    // thread t1 (printinfo,50,'p');
+    // thread t2 (printinfo,50,'r');
     cout << "test" << endl;
-    t1.join();
+    // t1.join();
     cout << "test3" << endl;
-    t2.join();
+    // t2.join();
     cout << "test2" << endl;
     return 0;
 }
